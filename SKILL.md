@@ -55,7 +55,8 @@ khmer-memory-doc/
    This runs ASR on every line, reseeds weak lines once (keeping the better take), mixes the audio, renders, makes the web copy and the docs, and backs everything up to `~/Movies/khmer_history_docs`. Watch it with Monitor.
    - If a long line still scores under about 0.6, stop the job, split the line in `narration.py`, re-narrate and restart.
    - A 15-minute render takes about 40 minutes on 5 workers.
-7. **Report.** Give the runtime, the file paths, the ASR mean and the low lines. Say clearly that a native Khmer speaker should listen, especially to lines with years, and that a historian should review the Khmer text.
+7. **Cover.** Edit the title lines in `build/cover.py`, then run `.venv/bin/python build/cover.py`. It writes `film/cover_<name>.png`, `.jpg` and a 1280×720 jpg, with the present-day guides dissolving into a grey memory scene and the title on an aged notebook page. Copy them to `~/Movies/khmer_history_docs/covers/`.
+8. **Report.** Give the runtime, the file paths, the ASR mean and the low lines. Say clearly that a native Khmer speaker should listen, especially to lines with years, and that a historian should review the Khmer text.
 
 ## Credits
 
